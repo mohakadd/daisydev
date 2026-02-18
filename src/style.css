@@ -266,7 +266,7 @@ nav a.active {
     background: url('/images/baner.webp');
     background-attachment: fixed;
     background-size: cover;
-    background-position: center top;
+    background-position: center 60px;
     /* Aligné en haut pour éviter de couper la tête */
     background-repeat: no-repeat;
     color: white;
