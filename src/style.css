@@ -263,7 +263,7 @@ nav a.active {
 #hero {
     position: relative;
     /* Image de fond avec effet parallaxe et superposition sombre pour la lisibilité */
-    background: linear-gradient(rgba(88, 57, 141, 0.7), rgba(56, 133, 244, 0.6)), url('/images/baner.webp');
+    background: url('/images/baner.webp');
     background-attachment: fixed;
     background-size: cover;
     background-position: center top;
@@ -271,7 +271,7 @@ nav a.active {
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding: 10rem 0 8rem;
+    padding: 18rem 0 12rem;
     /* Le clip-path peut entrer en conflit avec background-attachment: fixed sur certains navigateurs mobiles, 
        mais c'est souvent acceptable. Si ça pose problème, on pourra l'enlever. */
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -283,7 +283,7 @@ nav a.active {
         /* Aligné à droite sur mobile comme demandé */
         background-attachment: scroll;
         /* Désactivation du parallaxe (scroll) pour compatibilité iOS */
-        padding: 6rem 0 4rem;
+        padding: 12rem 0 8rem;
         /* Réduction de la hauteur du bandeau sur mobile */
     }
 }
