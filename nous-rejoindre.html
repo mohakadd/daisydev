@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nous rejoindre - Daisy 2026</title>
+    <meta name="description" content="Rejoindre Cergy en commun : formulaire d'engagement local avec Daisy Yaïch.">
+    <meta property="og:title" content="Nous rejoindre - Daisy 2026">
+    <meta property="og:description"
+        content="Rejoindre Cergy en commun : formulaire d'engagement local avec Daisy Yaïch.">
+    <meta property="og:image" content="/images/logoLFI.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://daisy2026.fr/nous-rejoindre.html">
+    <link rel="icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <header id="main-header">
+        <div class="container header-content">
+            <!-- Left: Cergy Logo -->
+            <a href="/" class="header-logo-left">
+                <img src="/images/logo-cergy.webp" alt="Cergy en Commun" height="50">
+            </a>
+
+            <!-- Center: Site Flag -->
+
+            <!-- Right: LFI Logo + Nav + Burger -->
+            <div class="header-right">
+                <a href="/" class="header-logo-right">
+                    <img src="/images/logoLFI.png" alt="France Insoumise" height="50">
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="/" data-content="global.nav.home">Accueil</a></li>
+                        <li><a href="/candidate.html" data-content="global.nav.project">Notre Programme</a></li>
+                        <!-- <li><a href="/notre-equipe.html" data-content="global.nav.team">Notre Équipe</a></li> -->
+                        <li><a href="/nous-rejoindre.html" class="active" data-content="global.nav.join">Nous
+                                rejoindre</a>
+                        </li>
+                        <li><a href="/contact.html" data-content="global.nav.contact">Contact</a></li>
+                        <li><a href="/faire-un-don.html" class="btn btn-primary" data-content="global.nav.donate"
+                                style="color: white; padding: 0.5rem 1rem;">Faire un don</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-title">
+            <div class="container">
+                <h1 data-content="join.title">Nous rejoindre</h1>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-form-container">
+                        <h2 data-content="join.form.title">Rejoindre Cergy en commun</h2>
+                        <div class="form-note" style="margin-bottom:1.5rem;">
+                            <p>Cergy en commun est le collectif citoyen engagé pour les élections municipales des 15 et
+                                22 mars 2026. Il se rassemble autour de la candidature de Daisy Yaïch, tête de liste de
+                                Cergy en commun, dans le cadre d’une liste de l’Union populaire, soutenue par la France
+                                insoumise. Ensemble, donnons un nouveau souffle à Cergy ! En cas de difficulté
+                                contactez-nous : <a
+                                    href="mailto:daisy.yaich2026@gmail.com">daisy.yaich2026@gmail.com</a></p>
+                        </div>
+                        <form name="nous-rejoindre" method="POST" action="/merci.html" data-netlify="true"
+                            netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="nous-rejoindre" />
+                            <p class="hidden" aria-hidden="true" style="display:none">
+                                <label>Ne pas remplir ce champ : <input name="bot-field" /></label>
+                            </p>
+
+                            <div class="form-section">
+                                <h3>Tes informations</h3>
+                                <div class="form-group">
+                                    <label for="prenom"><strong data-content="join.form.prenom">Prénom</strong>
+                                        *</label>
+                                    <input type="text" id="prenom" name="prenom" required autocomplete="given-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nom"><strong data-content="join.form.nom">Nom</strong> *</label>
+                                    <input type="text" id="nom" name="nom" required autocomplete="family-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><strong data-content="join.form.email">Adresse e-mail</strong>
+                                        *</label>
+                                    <input type="email" id="email" name="email" required autocomplete="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telephone"><strong data-content="join.form.telephone">Numéro de
+                                            téléphone</strong> *</label>
+                                    <input type="tel" id="telephone" name="telephone" required autocomplete="tel">
+                                </div>
+                                <div class="form-group">
+                                    <label for="adresse"><strong data-content="join.form.adresse">Adresse (lieu de
+                                            résidence)</strong> *</label>
+                                    <input type="text" id="adresse" name="adresse" required
+                                        autocomplete="street-address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="age"><strong data-content="join.form.age">Âge</strong> *</label>
+                                    <select id="age" name="age" class="select-modern" required>
+                                        <option value="" disabled selected>Choisir</option>
+                                        <option value="- 18 ans">- 18 ans</option>
+                                        <option value="18 - 25 ans">18 - 25 ans</option>
+                                        <option value="26 - 35 ans">26 - 35 ans</option>
+                                        <option value="36 - 60 ans">36 - 60 ans</option>
+                                        <option value="+ 60 ans">+ 60 ans</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="motivation"><strong data-content="join.form.motivation">Un petit mot
+                                            pour te présenter ou nous dire pourquoi tu nous rejoins ?</strong> <span
+                                            class="form-note">(facultatif)</span></label>
+                                    <textarea id="motivation" name="motivation" rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consentement" value="oui" required>
+                                <label for="consent" data-content="join.form.consent">J'accepte que mes données soient
+                                    utilisées pour me recontacter dans le cadre de la campagne municipale.</label>
+                            </div>
+                            <p class="form-note">Vos données sont utilisées uniquement pour l'organisation locale. Vous
+                                pouvez demander leur suppression à tout moment : <a
+                                    href="mailto:cergy.insoumise@gmail.com">cergy.insoumise@gmail.com</a>.</p>
+                            <button type="submit" class="btn btn-primary"
+                                data-content="join.form.submit">Envoyer</button>
+                        </form>
+                    </div>
+
+                    <div class="social-connect">
+                        <h2 data-content="contact.social.title">Suivez Daisy</h2>
+                        <div class="social-buttons-large">
+                            <a href="https://www.instagram.com/daisy_yaich_cergy" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-social instagram"><i
+                                    class="fa-brands fa-instagram"></i> Instagram</a>
+                            <a href="https://www.tiktok.com/@daisy_yaich_cergy" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-social tiktok"><i
+                                    class="fa-brands fa-tiktok"></i> TikTok</a>
+                            <a href="https://www.facebook.com/profile.php?id=100011356039437" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-social facebook"><i
+                                    class="fa-brands fa-facebook"></i> Facebook</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="voting-cta">
+            <div class="container">
+                <h2>Vérifiez votre inscription sur les listes électorales</h2>
+                <p>Démission de Macron, législatives anticipées, municipales en 2026 : des nombreuses échéances
+                    approchent.
+                    <span class="highlight">À Cergy, plusieurs milliers d’habitant·es ont été radié·es des listes
+                        électorales sans le
+                        savoir !</span> Que vous soyez nouvel·le arrivé·e ou résident·e de longue date, vérifiez votre
+                    inscription
+                    pour ne pas vous faire voler votre voix.
+                </p>
+                <a href="https://www.service-public.gouv.fr/particuliers/vosdroits/R16396" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                    <i class="fa-solid fa-check-to-slot" style="margin-right: 0.5rem;"></i> Je vérifie ma situation
+                    électorale
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/daisy_yaich_cergy" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://www.tiktok.com/@daisy_yaich_cergy" target="_blank" rel="noopener noreferrer"><i
+                        class="fa-brands fa-tiktok"></i> TikTok</a>
+                <a href="https://www.facebook.com/profile.php?id=100011356039437" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a>
+
+            </div>
+            <p data-content="global.footer.copyright">© 2026 Daisy Yaïch - Cergy en Commun</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

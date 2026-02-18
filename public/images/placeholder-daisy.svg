@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder Daisy Yaïch</title>
+  <desc id="desc">Silhouette simple avec fond dégradé aux couleurs de campagne.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b13d6"/>
+      <stop offset="100%" stop-color="#3885f4"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#bg)" rx="24"/>
+  <circle cx="160" cy="120" r="70" fill="#f7f7f7" opacity="0.9"/>
+  <rect x="75" y="190" width="170" height="90" rx="45" fill="#f7f7f7" opacity="0.9"/>
+  <path d="M160 75a35 35 0 1 1-35 35 35 35 0 0 1 35-35Z" fill="#e3e3e3"/>
+  <path d="M120 210c8-20 25-35 40-35s32 15 40 35" fill="#e3e3e3"/>
+</svg>
