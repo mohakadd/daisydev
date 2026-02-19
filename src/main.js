@@ -51,7 +51,7 @@ function initMosaic() {
         });
 
         el.innerHTML = `
-            <img src="/programme/${item.icon}" alt="${item.title}" class="mosaic-icon" onerror="this.src='/images/logo-cergy.webp'; this.style.opacity='0.3'">
+            <img src="${item.icon}" alt="${item.title}" class="mosaic-icon" onerror="this.src='/images/logo-cergy.webp'; this.style.opacity='0.3'">
             <h3 class="mosaic-title">${item.title}</h3>
         `;
 
@@ -72,7 +72,7 @@ function initMosaic() {
         modalTitle.textContent = item.title;
         modalTitle.style.color = item.color;
         modalContent.innerHTML = item.content;
-        modalIcon.src = `/programme/${item.icon}`;
+        modalIcon.src = item.icon;
         modalIcon.onerror = function () {
             this.src = '/images/logo-cergy.webp';
         }
