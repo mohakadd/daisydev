@@ -35,6 +35,19 @@ function initMosaic() {
     const mosaicContainer = document.getElementById('programme-mosaic');
     if (!mosaicContainer) return;
 
+    // Inject Carousel Structure
+    mosaicContainer.innerHTML = `
+        <div class="programme-carousel-container">
+            <button class="carousel-nav-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="programme-track" id="programme-track"></div>
+            <button class="carousel-nav-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    `;
+
+    const track = document.getElementById('programme-track');
+    const prevBtn = mosaicContainer.querySelector('.prev');
+    const nextBtn = mosaicContainer.querySelector('.next');
+
     // Render Items
     programmeData.forEach(item => {
         const el = document.createElement('div');
@@ -55,7 +68,17 @@ function initMosaic() {
         `;
 
         el.addEventListener('click', () => openModal(item));
-        mosaicContainer.appendChild(el);
+        track.appendChild(el);
+    });
+
+    // Scroll Logic
+    const scrollAmount = 300;
+    prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
 
     // Modal Logic
