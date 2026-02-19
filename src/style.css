@@ -1416,3 +1416,8 @@ footer {
         opacity: 1;
     }
 }
+
+/* Utility */
+.hidden {
+    display: none !important;
+}
