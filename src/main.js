@@ -75,6 +75,7 @@ function initMosaic() {
     // 2. Append Cloned Items (for infinite loop illusion)
     programmeData.forEach(item => {
         const clone = createMosaicItem(item);
+        clone.classList.add('is-clone');
         clone.setAttribute('aria-hidden', 'true'); // Accessibility
         track.appendChild(clone);
     });

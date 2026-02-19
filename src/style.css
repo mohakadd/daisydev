@@ -1285,6 +1285,35 @@ footer {
     }
 }
 
+@media (min-width: 769px) {
+    .programme-track {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 2rem;
+        overflow: visible;
+        scroll-snap-type: none;
+        padding: 0;
+    }
+
+    .mosaic-item {
+        flex: unset;
+        width: auto;
+        height: auto;
+        aspect-ratio: 1;
+        /* Keep square-ish */
+    }
+
+    /* Hide clones on desktop */
+    .mosaic-item.is-clone {
+        display: none;
+    }
+
+    /* Hide carousel buttons on desktop */
+    .carousel-nav-btn {
+        display: none;
+    }
+}
+
 
 /* Modal */
 .modal {
