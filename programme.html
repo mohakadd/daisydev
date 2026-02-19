@@ -80,7 +80,7 @@
             </div>
         </section>
 
-        <section id="program">
+        <section id="complet">
             <div class="container">
 
                 <div class="program-intro" style="margin-bottom: 2rem;">
@@ -89,8 +89,26 @@
                         Une version complète du programme arrivera prochainement.
                     </p>
                 </div>
-                <ul class="program-list" id="program-list">
-                </ul>
+                <div id="programme-mosaic" class="programme-mosaic">
+                    <!-- Mosaic items will be injected here by JS -->
+                </div>
+
+                <!-- Modal -->
+                <div id="programme-modal" class="modal" aria-hidden="true">
+                    <div class="modal-overlay" tabindex="-1" data-close></div>
+                    <div class="modal-container" role="dialog" aria-modal="true">
+                        <button class="modal-close" aria-label="Fermer" data-close>&times;</button>
+                        <div class="modal-header">
+                            <div class="modal-icon-wrapper">
+                                <img src="" alt="" id="modal-icon">
+                            </div>
+                            <h2 id="modal-title"></h2>
+                        </div>
+                        <div class="modal-body" id="modal-content">
+                            <!-- Content injected by JS -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="voting-cta">

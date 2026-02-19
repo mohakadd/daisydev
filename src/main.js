@@ -1,5 +1,6 @@
 import './style.css'
 import { content } from './content.js';
+import { programmeData } from './programme_data.js';
 import { initMap } from './map.js';
 import { initCarousel } from './carousel.js';
 
@@ -28,27 +29,71 @@ function injectContent() {
             console.warn(`Missing content for key: ${key}`, el);
         }
     });
+}
 
-    // Special handling for Program List (candidate.html)
-    const programList = document.getElementById('program-list');
-    if (programList && content.candidate.program.items) {
-        programList.innerHTML = ''; // Clear existing
-        content.candidate.program.items.forEach(item => {
-            const li = document.createElement('li');
-            li.className = 'program-item';
-            li.style.borderLeft = `4px solid ${item.color}`;
+function initMosaic() {
+    const mosaicContainer = document.getElementById('programme-mosaic');
+    if (!mosaicContainer) return;
 
-            const h3 = document.createElement('h3');
-            h3.textContent = item.title;
+    // Render Items
+    programmeData.forEach(item => {
+        const el = document.createElement('div');
+        el.className = 'mosaic-item';
+        el.setAttribute('data-id', item.id);
+        el.style.borderColor = 'transparent';
 
-            const p = document.createElement('p');
-            p.textContent = item.text;
-
-            li.appendChild(h3);
-            li.appendChild(p);
-            programList.appendChild(li);
+        // Hover effect for border color
+        el.addEventListener('mouseenter', () => {
+            el.style.borderColor = item.color;
         });
+        el.addEventListener('mouseleave', () => {
+            el.style.borderColor = 'transparent';
+        });
+
+        el.innerHTML = `
+            <img src="/programme/${item.icon}" alt="${item.title}" class="mosaic-icon" onerror="this.src='/images/logo-cergy.webp'; this.style.opacity='0.3'">
+            <h3 class="mosaic-title">${item.title}</h3>
+        `;
+
+        el.addEventListener('click', () => openModal(item));
+        mosaicContainer.appendChild(el);
+    });
+
+    // Modal Logic
+    const modal = document.getElementById('programme-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalContent = document.getElementById('modal-content');
+    const modalIcon = document.getElementById('modal-icon');
+    const closeBtns = document.querySelectorAll('[data-close]');
+
+    if (!modal) return;
+
+    function openModal(item) {
+        modalTitle.textContent = item.title;
+        modalTitle.style.color = item.color;
+        modalContent.innerHTML = item.content;
+        modalIcon.src = `/programme/${item.icon}`;
+        modalIcon.onerror = function () {
+            this.src = '/images/logo-cergy.webp';
+        }
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
 }
 
 // Countdown Logic
@@ -77,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     injectContent();
     initMap();
     initCarousel('team-carousel');
+    initMosaic();
     // Update countdown every minute (no need to run each second for days/hours)
     setInterval(updateCountdown, 60000);
     updateCountdown();
