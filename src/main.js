@@ -52,7 +52,8 @@ function initMosaic() {
 
         el.innerHTML = `
             <img src="${item.icon}" alt="${item.title}" class="mosaic-icon" onerror="this.src='/images/logo-cergy.webp'; this.style.opacity='0.3'">
-            <h3 class="mosaic-title">${item.title}</h3>
+            <img src="${item.icon}" alt="${item.title}" class="mosaic-icon" onerror="this.src='/images/logo-cergy.webp'; this.style.opacity='0.3'">
+
         `;
 
         el.addEventListener('click', () => openModal(item));
