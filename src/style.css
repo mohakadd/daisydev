@@ -201,6 +201,97 @@ nav a.active {
     color: var(--color-purple);
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 260px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    text-align: left;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content li {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: var(--color-text);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--color-bg-alt);
+    color: var(--color-purple);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hide Home link on desktop */
+@media (min-width: 901px) {
+    nav>ul>li:first-child {
+        display: none;
+    }
+}
+
+/* Fix for mobile */
+@media (max-width: 900px) {
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        display: none;
+        /* Hidden by default even on mobile, requires click or structure change */
+        background-color: transparent;
+        padding-left: 0;
+        min-width: unset;
+        text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+        /* Disable hover on mobile, use click */
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+        position: relative;
+        /* Stack vertically */
+    }
+
+    .dropdown-content a {
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .dropbtn i {
+        margin-left: 5px;
+    }
+}
+
 /* Mobile Nav Toggle Button */
 .mobile-nav-toggle {
     display: none;
@@ -279,7 +370,7 @@ nav a.active {
 
 @media (max-width: 768px) {
     #hero {
-        background-position: right top;
+        background-position: 75% top;
         /* Aligné à droite sur mobile comme demandé */
         background-attachment: scroll;
         /* Désactivation du parallaxe (scroll) pour compatibilité iOS */
@@ -355,6 +446,7 @@ nav a.active {
 .priority-card h3 {
     color: var(--color-purple);
     margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
 /* Program List */

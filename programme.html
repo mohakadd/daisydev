@@ -10,7 +10,7 @@
     <meta property="og:description" content="La candidate Daisy Yaïch et son projet pour Cergy 2026.">
     <meta property="og:image" content="/images/logoLFI.png">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://daisy2026.fr/candidate.html">
+    <link rel="canonical" href="https://daisy2026.fr/programme.html">
     <link rel="icon" href="/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -30,19 +30,25 @@
 
             <!-- Right: LFI Logo + Nav + Burger -->
             <div class="header-right">
-                <a href="/" class="header-logo-right">
-                    <img src="/images/logoLFI.png" alt="France Insoumise" height="50">
-                </a>
+
                 <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <nav>
                     <ul>
                         <li><a href="/" data-content="global.nav.home">Accueil</a></li>
-                        <li><a href="/candidate.html" data-content="global.nav.project">Notre Programme</a></li>
+                        <li class="dropdown">
+                            <a href="/programme.html" class="dropbtn" data-content="global.nav.project">Programme <i
+                                    class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-content">
+                                <li><a href="/programme.html#colonnes">Les 12 Colonnes de Cergy en commun</a></li>
+                                <li><a href="/programme.html#complet">Notre programme complet</a></li>
+                            </ul>
+                        </li>
                         <li><a href="/notre-equipe.html" data-content="global.nav.team">Notre Équipe</a></li>
                         <li><a href="/nous-rejoindre.html" data-content="global.nav.join">Nous rejoindre</a></li>
-                        <li><a href="/contact.html" data-content="global.nav.contact">Contact</a></li>
+                        <li><a href="/procuration.html" data-content="global.nav.proxy">Procuration</a></li>
+
                         <li><a href="/faire-un-don.html" class="btn btn-primary" data-content="global.nav.donate"
                                 style="color: white; padding: 0.5rem 1rem;">Faire un don</a></li>
                     </ul>
@@ -76,14 +82,7 @@
 
         <section id="program">
             <div class="container">
-                <h2 data-content="candidate.program.title">Notre Vision pour Cergy</h2>
-                <div class="video-container" style="margin-bottom: 3rem; text-align: center;">
-                    <h3>Découvrez notre annonce en vidéo</h3>
-                    <iframe width="315" height="560" src="https://www.youtube.com/embed/a50SzgUub7o"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
+
                 <div class="program-intro" style="margin-bottom: 2rem;">
                     <p class="alert-box"
                         style="background-color: #fff3cd; color: #856404; padding: 1rem; border-radius: 5px; border: 1px solid #ffeeba;">

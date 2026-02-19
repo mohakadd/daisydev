@@ -99,4 +99,40 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    // Mobile Dropdown Toggle
+    const dropdowns = document.querySelectorAll('.dropdown > a');
+    dropdowns.forEach(dropdownToggle => {
+        dropdownToggle.addEventListener('click', (e) => {
+            // Only on mobile or small screens where hover is not primary
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                const parent = dropdownToggle.parentElement;
+                parent.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close mobile menu when a link is clicked
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // If we are on mobile and this link is a dropdown toggle, do not close menu
+            if (window.innerWidth <= 900 && link.classList.contains('dropbtn')) {
+                return;
+            }
+
+            // Close menu
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                if (navToggle) {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    const icon = navToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            }
+        });
+    });
 });

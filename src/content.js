@@ -9,6 +9,7 @@ export const content = {
             contact: "Contact",
             join: "Nous rejoindre",
             donate: "Faire un don",
+            proxy: "Procuration",
             cta: "Nous rejoindre"
         },
         footer: {
@@ -108,6 +109,11 @@ export const content = {
         },
         social: {
             title: "Suivez Daisy"
+        }
+    },
+    proxy: {
+        form: {
+            title: "Je donne ma procuration"
         }
     },
     join: {

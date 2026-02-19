@@ -11,8 +11,9 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                candidate: resolve(__dirname, 'candidate.html'),
-                contact: resolve(__dirname, 'contact.html'),
+                programme: resolve(__dirname, 'programme.html'),
+                procuration: resolve(__dirname, 'procuration.html'),
+
                 join: resolve(__dirname, 'nous-rejoindre.html'),
                 donate: resolve(__dirname, 'faire-un-don.html'),
                 team: resolve(__dirname, 'notre-equipe.html'),

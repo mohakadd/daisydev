@@ -31,19 +31,24 @@
 
             <!-- Right: LFI Logo + Nav + Burger -->
             <div class="header-right">
-                <a href="/" class="header-logo-right">
-                    <img src="/images/logoLFI.png" alt="France Insoumise" height="50">
-                </a>
+
                 <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false">
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <nav>
                     <ul>
                         <li><a href="/" data-content="global.nav.home">Accueil</a></li>
-                        <li><a href="/candidate.html" data-content="global.nav.project">Notre Programme</a></li>
+                        <li class="dropdown">
+                            <a href="/programme.html" class="dropbtn" data-content="global.nav.project">Programme <i
+                                    class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-content">
+                                <li><a href="/programme.html#colonnes">Les 12 Colonnes de Cergy en commun</a></li>
+                                <li><a href="/programme.html#complet">Notre programme complet</a></li>
+                            </ul>
+                        </li>
                         <li><a href="/notre-equipe.html" data-content="global.nav.team">Notre Équipe</a></li>
                         <li><a href="/nous-rejoindre.html" data-content="global.nav.join">Nous rejoindre</a></li>
-                        <li><a href="/contact.html" data-content="global.nav.contact">Contact</a></li>
+                        <li><a href="/procuration.html" data-content="global.nav.proxy">Procuration</a></li>
                     </ul>
                 </nav>
             </div>

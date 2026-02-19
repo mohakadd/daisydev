@@ -36,19 +36,25 @@
 
       <!-- Right: LFI Logo + Nav + Burger -->
       <div class="header-right">
-        <a href="/" class="header-logo-right">
-          <img src="/images/logoLFI.png" alt="France Insoumise" height="50">
-        </a>
+
         <button class="mobile-nav-toggle" aria-label="Menu" aria-expanded="false">
           <i class="fa-solid fa-bars"></i>
         </button>
         <nav>
           <ul>
             <li><a href="/" data-content="global.nav.home">Accueil</a></li>
-            <li><a href="/candidate.html" data-content="global.nav.project">Notre Programme</a></li>
+            <li class="dropdown">
+              <a href="/programme.html" class="dropbtn" data-content="global.nav.project">Programme <i
+                  class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-content">
+                <li><a href="/programme.html#colonnes">Les 12 Colonnes de Cergy en commun</a></li>
+                <li><a href="/programme.html#complet">Notre programme complet</a></li>
+              </ul>
+            </li>
             <li><a href="/notre-equipe.html" data-content="global.nav.team">Notre Équipe</a></li>
             <li><a href="/nous-rejoindre.html" data-content="global.nav.join">Nous rejoindre</a></li>
-            <li><a href="/contact.html" data-content="global.nav.contact">Contact</a></li>
+            <li><a href="/procuration.html" data-content="global.nav.proxy">Procuration</a></li>
+
             <li><a href="/faire-un-don.html" class="btn btn-primary" data-content="global.nav.donate"
                 style="color: white; padding: 0.5rem 1rem;">Faire un don</a></li>
           </ul>
@@ -67,6 +73,8 @@
       <div class="container hero-content">
         <h1>Cergy en Commun, avec Daisy Yaïch</h1>
         <h2>Redonnons un nouveau souffle à Cergy aux élections municipales des 15 et 22 mars 2026.</h2>
+        <img src="/images/logoLFI.png" alt="France Insoumise"
+          style="height: 80px; margin-top: 1.5rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
       </div>
     </section>
 
@@ -94,24 +102,37 @@
       </div>
     </section>
 
+    <section id="vision">
+      <div class="container">
+        <h2 class="section-title" data-content="candidate.program.title">Notre Vision pour Cergy</h2>
+        <div class="video-container" style="margin-bottom: 3rem; text-align: center;">
+          <h3>Découvrez notre annonce en vidéo</h3>
+          <iframe width="315" height="560" src="https://www.youtube.com/embed/a50SzgUub7o" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
     <section id="priorities">
       <div class="container">
         <h2 class="section-title" data-content="home.priorities.title">Nos 4 Priorités</h2>
         <div class="priorities-grid">
           <div class="priority-card" style="border-top: 5px solid var(--color-red);">
-            <h3 data-content="home.priorities.p1.title">Soigner Cergy</h3>
+            <h3 data-content="home.priorities.p1.title" style="color: var(--color-red);">Soigner Cergy</h3>
             <p data-content="home.priorities.p1.text">Création maison de santé...</p>
           </div>
           <div class="priority-card" style="border-top: 5px solid var(--color-yellow);">
-            <h3 data-content="home.priorities.p2.title">Réussir à l'école</h3>
+            <h3 data-content="home.priorities.p2.title" style="color: var(--color-yellow);">Réussir à l'école</h3>
             <p data-content="home.priorities.p2.text">Cantine, fournitures...</p>
           </div>
           <div class="priority-card" style="border-top: 5px solid var(--color-green);">
-            <h3 data-content="home.priorities.p3.title">Vivre mieux</h3>
+            <h3 data-content="home.priorities.p3.title" style="color: var(--color-green);">Vivre mieux</h3>
             <p data-content="home.priorities.p3.text">Logement, transports...</p>
           </div>
           <div class="priority-card" style="border-top: 5px solid var(--color-purple);">
-            <h3 data-content="home.priorities.p4.title">Sécurité</h3>
+            <h3 data-content="home.priorities.p4.title" style="color: var(--color-purple);">Sécurité</h3>
             <p data-content="home.priorities.p4.text">Médiation, prévention...</p>
           </div>
         </div>
@@ -121,6 +142,8 @@
         </p>
       </div>
     </section>
+
+
     <section class="voting-cta">
       <div class="container">
         <h2>Vérifiez votre inscription sur les listes électorales</h2>
