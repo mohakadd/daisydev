@@ -1168,7 +1168,7 @@ footer {
     /* Firefox */
     -ms-overflow-style: none;
     /* IE/Edge */
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; Removed to allow instant jump for infinite loop */
 }
 
 .programme-track::-webkit-scrollbar {

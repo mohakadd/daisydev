@@ -48,37 +48,79 @@ function initMosaic() {
     const prevBtn = mosaicContainer.querySelector('.prev');
     const nextBtn = mosaicContainer.querySelector('.next');
 
-    // Render Items
-    programmeData.forEach(item => {
+    // Render Items Helper
+    const createMosaicItem = (item) => {
         const el = document.createElement('div');
         el.className = 'mosaic-item';
         el.setAttribute('data-id', item.id);
         el.style.borderColor = 'transparent';
 
-        // Hover effect for border color
-        el.addEventListener('mouseenter', () => {
-            el.style.borderColor = item.color;
-        });
-        el.addEventListener('mouseleave', () => {
-            el.style.borderColor = 'transparent';
-        });
-
         el.innerHTML = `
             <img src="${item.icon}" alt="${item.title}" class="mosaic-icon" onerror="this.src='/images/logo-cergy.webp'; this.style.opacity='0.3'">
         `;
 
+        // Hover effect
+        el.addEventListener('mouseenter', () => el.style.borderColor = item.color);
+        el.addEventListener('mouseleave', () => el.style.borderColor = 'transparent');
         el.addEventListener('click', () => openModal(item));
-        track.appendChild(el);
+
+        return el;
+    };
+
+    // 1. Append Original Items
+    programmeData.forEach(item => {
+        track.appendChild(createMosaicItem(item));
     });
 
-    // Scroll Logic
-    const scrollAmount = 300;
+    // 2. Append Cloned Items (for infinite loop illusion)
+    programmeData.forEach(item => {
+        const clone = createMosaicItem(item);
+        clone.setAttribute('aria-hidden', 'true'); // Accessibility
+        track.appendChild(clone);
+    });
+
+    // Infinite Scroll Logic
+    const checkScrollLoop = () => {
+        // If we have scrolled past approximately half the content (the original set)
+        // Reset back to start to create infinite illusion
+        // We use a small threshold to avoid glitching at exact pixel boundaries
+        if (track.scrollLeft >= (track.scrollWidth / 2)) {
+            track.scrollLeft = 0; // Instant jump back to start
+        }
+    };
+
+    track.addEventListener('scroll', checkScrollLoop);
+
+    // Scroll Buttons Logic
+    const itemWidth = 220 + 24; // Width + Gap (approx)
+
     prevBtn.addEventListener('click', () => {
-        track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        // If at start, jump to half (end of originals) before scrolling back
+        if (track.scrollLeft <= 0) {
+            track.scrollLeft = track.scrollWidth / 2;
+        }
+        track.scrollBy({ left: -itemWidth, behavior: 'smooth' });
     });
 
     nextBtn.addEventListener('click', () => {
-        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        track.scrollBy({ left: itemWidth, behavior: 'smooth' });
+    });
+
+    // Auto Scroll (optional but good for 'infinite' feel)
+    let autoScrollInterval = setInterval(() => {
+        if (!document.hidden) {
+            track.scrollBy({ left: itemWidth, behavior: 'smooth' });
+        }
+    }, 3000);
+
+    // Pause on hover
+    const container = document.querySelector('.programme-carousel-container');
+    container.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+    container.addEventListener('mouseleave', () => {
+        clearInterval(autoScrollInterval); // Clear first to avoid dupes
+        autoScrollInterval = setInterval(() => {
+            if (!document.hidden) track.scrollBy({ left: itemWidth, behavior: 'smooth' });
+        }, 3000);
     });
 
     // Modal Logic
