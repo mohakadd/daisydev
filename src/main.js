@@ -226,26 +226,33 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleHashNavigation() {
         const colonnesSection = document.getElementById('colonnes');
         const completSection = document.getElementById('complet');
+        const bioSection = document.getElementById('bio');
 
         // Only run on programme page if these sections exist
         if (!colonnesSection || !completSection) return;
 
         const hash = window.location.hash;
 
-        if (hash === '#colonnes') {
-            // View: 12 Colonnes
-            colonnesSection.classList.remove('hidden');
-            completSection.classList.add('hidden');
-            window.scrollTo(0, 0); // Reset scroll
-        } else {
-            // View: Default / Complet
-            // Default behavior: Show Complet, Hide Colonnes (or keep both? User asked to hide carousel on colonnes page)
-            // Let's make them mutually exclusive for a cleaner "page" feel
+        // Reset all hidden first (helper)
+        const showSection = (sectionToShow) => {
             colonnesSection.classList.add('hidden');
-            completSection.classList.remove('hidden');
+            completSection.classList.add('hidden');
+            if (bioSection) bioSection.classList.add('hidden');
 
-            // If it's explicitly #complet, maybe scroll to it? 
-            // Since it's the top section after header (if colonnes is hidden), scroll to top is fine.
+            sectionToShow.classList.remove('hidden');
+            window.scrollTo(0, 0);
+        };
+
+        if (hash === '#colonnes') {
+            showSection(colonnesSection);
+        } else if (hash === '#bio' && bioSection) {
+            showSection(bioSection);
+        } else {
+            // Default: Show Complet
+            // If hash is #complet or empty
+            colonnesSection.classList.add('hidden');
+            if (bioSection) bioSection.classList.add('hidden');
+            completSection.classList.remove('hidden');
         }
     }
 
