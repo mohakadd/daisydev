@@ -1466,7 +1466,7 @@ footer {
 }
 
 .colonnes-bg-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/12colones.webp');
+    background: url('/images/12colones.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1486,52 +1486,68 @@ footer {
     display: none !important;
 }
 
-/* Colonnes Simple List */
+/* Colonnes Modern Cards Grid */
 .colonnes-bg-section .container {
-    background: rgba(255, 255, 255, 0.4);
-    /* Cadre blanc avec plus de transparence */
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    max-width: 900px;
+    padding: 2rem 1rem;
+    max-width: 1200px;
     margin: 0 auto;
-    backdrop-filter: blur(8px);
-    /* Plus de flou pour garder le texte lisible */
 }
 
 .colonnes-bg-section h2 {
     color: var(--color-purple) !important;
     text-shadow: none !important;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    margin-bottom: 3rem;
 }
 
-.colonnes-simple-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+.colonnes-cards-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
-@media (min-width: 768px) {
-    .colonnes-simple-list {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-}
-
-.colonnes-simple-list li {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #333;
+.colonne-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1.5rem;
     display: flex;
     align-items: flex-start;
-    gap: 0.8rem;
-    line-height: 1.4;
+    gap: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    text-align: left;
 }
 
-.colonnes-simple-list li i {
+.colonne-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.colonne-card-icon {
+    background: rgba(46, 153, 89, 0.15);
+    /* Light green circular padding */
     color: var(--color-green);
-    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.1rem;
+}
+
+.colonne-card-text {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.4;
+    margin-top: 6px;
 }
