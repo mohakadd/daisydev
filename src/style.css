@@ -361,7 +361,7 @@ nav a.active {
     /* Aligné en haut pour éviter de couper la tête */
     background-repeat: no-repeat;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 18rem 0 12rem;
     /* Le clip-path peut entrer en conflit avec background-attachment: fixed sur certains navigateurs mobiles, 
        mais c'est souvent acceptable. Si ça pose problème, on pourra l'enlever. */

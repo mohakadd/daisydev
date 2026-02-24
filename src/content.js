@@ -47,19 +47,19 @@ export const content = {
             title: "Nos 4 Priorités",
             p1: {
                 title: "Soigner Cergy",
-                text: "Création d’une maison municipale de santé avec médecins et spécialistes recrutés directement par la ville, sans dépassements d’honoraires."
+                text: "Créer une maison municipale de santé avec médecins et spécialistes recrutés directement par la ville, sans dépassements d’honoraires."
             },
             p2: {
                 title: "Réussir à l’école",
-                text: "Gratuité des fournitures scolaires du CP au CM2, mise en place d’une cantine municipale qui redonne la priorité à ce que mangent nos enfants, refonte du projet éducatif sur le temps périscolaire, co-construit avec nos associations, plan de rénovation et de végétalisation des groupes scolaires."
+                text: "Offrir un kit de fournitures scolaires du CP au CM2, manger mieux à la cantine et reconstruire le projet éducatif du temps périscolaire en lien avec les associations, rénover et végétaliser nos écoles."
             },
             p3: {
                 title: "Vivre mieux dans nos quartiers",
-                text: "Accompagnement des habitantes et habitants dans la bataille face aux bailleurs pour des loyers justes et un habitat digne, des transports réguliers et accessibles, des espaces publics propres et entretenus."
+                text: "Accompagner habitantes et habitants dans la bataille face aux bailleurs pour des loyers justes et un habitat digne, des transports réguliers et accessibles, des espaces publics propres et entretenus."
             },
             p4: {
                 title: "Rassurer et sécuriser par la proximité",
-                text: "Renforcement du lien population-police, des médiateurs formés et présents dans les quartiers, une politique de prévention volontariste."
+                text: "Renforcer la prévention par la présence dans les rues d’éducatrices et d’éducateurs formés en complément de la police municipale."
             },
             cta: "Découvrir le programme complet"
         }
