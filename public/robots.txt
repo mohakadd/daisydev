@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://daisy2026.fr/sitemap.xml
