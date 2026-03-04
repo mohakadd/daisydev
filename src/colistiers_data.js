@@ -84,7 +84,7 @@ export const colistiersData = {
             "quartier": "HAUTS-DE-CERGY",
             "age": "42 ans",
             "metier": "Graphiste",
-            "description": "Militant associatif"
+            "description": "Militante associatif"
         },
         {
             "id": "sminte",
@@ -102,7 +102,7 @@ export const colistiersData = {
             "quartier": "HAUTS-DE-CERGY",
             "age": "42 ans",
             "metier": "Assistante commerciale",
-            "description": "Militant associatif"
+            "description": "Militante associatif"
         },
         {
             "id": "rgadioux",
@@ -138,7 +138,7 @@ export const colistiersData = {
             "quartier": "BORDS D'OISE",
             "age": "62 ans",
             "metier": "Fonctionnaire territoriale",
-            "description": "Militant associatif"
+            "description": "Militante associatif"
         },
         {
             "id": "ahassani",
@@ -228,7 +228,7 @@ export const colistiersData = {
             "quartier": "TROIS-BOIS",
             "age": "31 ans",
             "metier": "Informaticienne",
-            "description": "Militant associatif"
+            "description": "Militante associatif"
         },
         {
             "id": "ckerkar",
