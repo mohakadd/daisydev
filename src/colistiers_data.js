@@ -20,7 +20,7 @@ export const colistiersData = {
             "nom prenom": "Shamseddine Monayajo",
             "quartier": "HORLOGE",
             "age": "26 ans",
-            "metier": "Autoentrepreneur, athlète de haut niveau",
+            "metier": "Autoentrepreneur",
             "description": "Membre actif du bureau d’une association sportive cergyssoise. Bénévole au sein d'une association solidaire d'entraide locale pour les personnes dans le besoin. Athlète de haut niveau."
         },
         {
