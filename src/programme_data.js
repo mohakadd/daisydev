@@ -239,6 +239,10 @@ export const programmeData = [
                     <i class="fa-solid fa-file-pdf" style="color: var(--color-red); font-size: 1.5rem;"></i>
                     <span>Pacte Mères Déters</span>
                 </a>
+                <a href="/chartes/charte-argos42_municipales.pdf" target="_blank" rel="noopener noreferrer" class="charte-btn" style="display: flex; align-items: center; gap: 1rem; background: #f8f9fa; border: 1px solid #ddd; padding: 1rem; border-radius: 8px; color: #333; font-weight: bold; text-decoration: none; transition: all 0.2s;">
+                    <i class="fa-solid fa-file-pdf" style="color: var(--color-red); font-size: 1.5rem;"></i>
+                    <span>Charte Argos 42</span>
+                </a>
             </div>
         `
     }
