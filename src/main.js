@@ -3,6 +3,7 @@ import { content } from './content.js';
 import { programmeData } from './programme_data.js';
 import { initMap } from './map.js';
 import { initCarousel } from './carousel.js';
+import { renderColistiers } from './colistiers.js';
 
 // Content Injection Logic
 function injectContent() {
@@ -188,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMap();
     initCarousel('team-carousel');
     initMosaic();
+    renderColistiers();
     // Update countdown every minute (no need to run each second for days/hours)
     setInterval(updateCountdown, 60000);
     updateCountdown();

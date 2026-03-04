@@ -61,350 +61,130 @@
     </header>
 
     <main id="main">
-        <section class="page-title">
-            <div class="container">
-                <h1 data-content="team.title">Une équipe à l’image de Cergy</h1>
-                <p data-content="team.intro" style="font-size: 1.2rem; max-width: 800px; margin-top: 1rem;">Découvrez
-                    les femmes et les hommes qui s'engagent à vos côtés pour Cergy.</p>
+        <section class="page-title"
+            style="padding: 6rem 0 3rem; background: linear-gradient(135deg, rgba(88, 57, 141, 0.05) 0%, rgba(218, 56, 50, 0.05) 100%); text-align: center; position: relative; overflow: hidden;">
+            <!-- Subtle decorative background circles -->
+            <div
+                style="position: absolute; top: -50px; left: -50px; width: 200px; height: 200px; border-radius: 50%; background: var(--color-purple); opacity: 0.05; filter: blur(20px);">
+            </div>
+            <div
+                style="position: absolute; bottom: -50px; right: 10%; width: 150px; height: 150px; border-radius: 50%; background: var(--color-red); opacity: 0.05; filter: blur(20px);">
+            </div>
+
+            <div class="container" style="position: relative; z-index: 2;">
+                <h1 data-content="team.title"
+                    style="color: var(--color-purple); font-size: 3.5rem; letter-spacing: -0.02em; margin-bottom: 1.5rem; text-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    Une équipe à l’image de Cergy</h1>
+                <p data-content="team.intro"
+                    style="font-size: 1.35rem; color: #555; max-width: 750px; margin: 0 auto; line-height: 1.6; font-weight: 300;">
+                    Découvrez les femmes et les hommes qui s'engagent à vos côtés pour Cergy.
+                </p>
+                <!-- Decorative separator -->
+                <div
+                    style="margin: 2.5rem auto 0; width: 80px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--color-purple), var(--color-red));">
+                </div>
             </div>
         </section>
 
         <section id="candidate-profile" style="padding: 4rem 0;">
             <div class="container">
                 <div class="bio-card"
-                    style="text-align: center; max-width: 800px; margin: 0 auto; background: var(--color-light); padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <img src="/images/coli/dyaich.webp" alt="Portrait de Daisy Yaïch" class="bio-photo"
-                        style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; margin-bottom: 1.5rem;">
-                    <div style="text-align: left; font-size: 1.1rem; line-height: 1.6;">
-                        <p><strong>Daisy Yaïch, 40 ans, tête de liste.</strong> Enseignante en charge de la
-                            scolarisation des élèves en situation de handicap. Responsable associative depuis plus de 20
-                            ans à Cergy.</p>
+                    style="display: flex; flex-direction: column; align-items: center; gap: 2.5rem; max-width: 900px; margin: 0 auto; background: white; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 6px solid var(--color-purple); position: relative; z-index: 10;">
+                    <style>
+                        @media (min-width: 768px) {
+                            #candidate-profile .bio-card {
+                                flex-direction: row !important;
+                                text-align: left !important;
+                                align-items: stretch !important;
+                            }
+                        }
+                    </style>
+                    <div style="flex-shrink: 0; position: relative;">
+                        <!-- Adding a decorative circle behind -->
+                        <div
+                            style="position: absolute; top: -10px; left: -10px; width: 100%; height: 100%; border-radius: 50%; background: linear-gradient(135deg, var(--color-purple), var(--color-red)); opacity: 0.2; transform: scale(1.05);">
+                        </div>
+                        <img src="/images/dyaich_square.jpg" onerror="this.src='/images/coli/dyaich.webp'"
+                            alt="Portrait de Daisy Yaïch" class="bio-photo"
+                            style="width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 4px solid white; box-shadow: 0 8px 16px rgba(0,0,0,0.15); margin: 0; position: relative; z-index: 2;">
+                    </div>
+                    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center;">
+                        <h2 style="color: var(--color-purple); font-size: 2.5rem; margin-bottom: 0.5rem;">Daisy Yaïch
+                        </h2>
+                        <h3
+                            style="color: var(--color-red); font-size: 1.3rem; font-weight: 700; text-transform: uppercase; margin-bottom: 1.5rem; letter-spacing: 0.05em;">
+                            40 ans, tête de liste</h3>
+                        <div style="font-size: 1.15rem; line-height: 1.7; color: #444;">
+                            <p style="margin-bottom: 1rem;"><i class="fa-solid fa-graduation-cap"
+                                    style="color: var(--color-purple); width: 25px;"></i> Enseignante en charge de la
+                                scolarisation des élèves en situation de handicap.</p>
+                            <p><i class="fa-solid fa-hands-holding-circle"
+                                    style="color: var(--color-purple); width: 25px;"></i> Responsable associative depuis
+                                plus de 20 ans à Cergy.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="team-map-info" style="padding: 2rem 0 4rem 0;">
-            <div class="container" style="text-align: center;">
-                <img src="/images/coli/map.webp" alt="Carte de Cergy"
-                    style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+        <section id="team-map-info"
+            style="padding: 6rem 0 4rem 0; background: linear-gradient(to bottom, #ffffff, #f9f9f9);">
+            <div class="container"
+                style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 3rem;">
+
                 <div
-                    style="background: var(--color-purple); color: white; padding: 2rem; border-radius: 10px; max-width: 800px; margin: 0 auto;">
-                    <p style="font-size: 1.2rem; font-weight: bold; margin: 0;">Moyenne d’âge de la liste Cergy en
-                        commun : 43,5 ans.</p>
-                    <p style="font-size: 1.1rem; margin-top: 0.5rem; margin-bottom: 0;">Le plus jeune a 19 ans et le
-                        doyen a 77 ans.</p>
+                    style="background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); padding: 2rem; max-width: 900px; width: 100%; border-top: 5px solid var(--color-purple);">
+                    <h2 class="section-title" style="margin-bottom: 2rem; font-size: 2rem;">Une équipe représentative
+                    </h2>
+                    <img src="/images/coli/map.webp" alt="Carte de Cergy"
+                        style="width: 100%; max-width: 700px; height: auto; border-radius: 8px; margin-bottom: 2rem; border: 1px solid #eee;">
+
+                    <div
+                        style="background: linear-gradient(135deg, var(--color-purple), var(--color-red)); color: white; padding: 2.5rem 2rem; border-radius: 12px; margin-top: -3rem; position: relative; z-index: 5; box-shadow: 0 8px 20px rgba(0,0,0,0.15); display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2rem;">
+                        <div style="text-align: center;">
+                            <span style="font-size: 3rem; font-weight: 900; display: block; line-height: 1;">43,5</span>
+                            <span
+                                style="font-size: 1.1rem; opacity: 0.9; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Moyenne
+                                d'âge</span>
+                        </div>
+                        <div style="text-align: center;">
+                            <span style="font-size: 3rem; font-weight: 900; display: block; line-height: 1;">19 -
+                                77</span>
+                            <span
+                                style="font-size: 1.1rem; opacity: 0.9; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">De
+                                19 à 77 ans</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-                        <!-- DEBUT LISTE COLISTIERS -->
+        <!-- DEBUT LISTE COLISTIERS -->
         <section id="colistiers-list" style="padding: 2rem 0 4rem 0; background-color: #fcfcfc;">
-            <div class="container">
-                <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">L'équipe par quartier</h2>
-                <h3 style="color: #E61E25; border-bottom: 3px solid #E61E25; padding-bottom: 0.5rem; margin-top: 3rem; font-size: 1.8rem;">Hauts-de-Cergy</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/fcoupaye.webp" alt="Frédéric Coupaye" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Frédéric Coupaye</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">61 ans - Directeur financier</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Militant écologiste.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/aturk.webp" alt="Aygül Türk" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Aygül Türk</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">47 ans - Accompagnante d’élèves en situation de handicap</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Bénévole associative d’une association culturelle.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/tazzag.webp" alt="Tahar Azzag" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Tahar Azzag</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">35 ans - Architecte-ingénieur spécialisé dans l’urbanisme</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Président de co-propriété à Cergy-le-Haut. Membre d’une association de mentorat envers les étudiants. Militant antiraciste.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/lbodin.webp" alt="Lucie Bodin" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Lucie Bodin</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">42 ans - Graphiste</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/sminte.webp" alt="Sankoung Minte" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Sankoung Minte</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">48 ans - Chef de projet pharmaceutique</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Président d’une association d’aide aux plus démunis. Secrétaire général d’une association autour de la rénovation des écoles et de la fourniture de matériel scolaire. Membre d’une association dédiée au handicap.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/dbelghari.webp" alt="Dalila Belghari" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Dalila Belghari</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">42 ans - Assistante commerciale</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/rgadioux.webp" alt="Raphaël Gadioux" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Raphaël Gadioux</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">26 ans - Agent d’accueil</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Militant associatif.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/hleoue.webp" alt="Hortense Leoué" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Hortense Leoué</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">49 ans - Engagée associative</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Engagée dans une association locale pour les familles dans le besoin.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #E61E25; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/eakan.webp" alt="Eray Akan" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #E61E25; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Eray Akan</h4>
-                        <p style="font-weight: bold; color: #E61E25; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">22 ans - Courtier en assurance</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Bénévole associatif d’une association culturelle.</p>
-                    </div>
-                </div>
-                <h3 style="color: #69B34C; border-bottom: 3px solid #69B34C; padding-bottom: 0.5rem; margin-top: 3rem; font-size: 1.8rem;">Horloge</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="colistier-card" style="border-top: 5px solid #69B34C; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/smonayajo.webp" alt="Shamseddine Monayajo" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #69B34C; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Shamseddine Monayajo</h4>
-                        <p style="font-weight: bold; color: #69B34C; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">26 ans - Autoentrepreneur, athlète de haut niveau</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Membre actif du bureau d’une association sportive cergyssoise. Bénévole au sein d'une association solidaire d'entraide locale pour les personnes dans le besoin.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #69B34C; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/asedjai.webp" alt="Angelique Sedjaï" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #69B34C; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Angelique Sedjaï</h4>
-                        <p style="font-weight: bold; color: #69B34C; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">40 ans - Assistante maternelle</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Membre d’une association locale d’éveil et parentalité.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #69B34C; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/ddelvig.webp" alt="Diego Delvig" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #69B34C; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Diego Delvig</h4>
-                        <p style="font-weight: bold; color: #69B34C; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">19 ans - Étudiant en école d’ingénieur</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Militant altermondialiste.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #69B34C; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/tmerad.webp" alt="Talia Merad" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #69B34C; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Talia Merad</h4>
-                        <p style="font-weight: bold; color: #69B34C; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">20 ans - Étudiante en droit, monitrice-éducatrice</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Responsable associative. Présidente d’une association à destination des personnes en situation de handicap et suivies par l’ASE. Vice-présidente inclusion et plaidoyer d’une association étudiante. Membre de l’Association des Jeunes Élues de France.</p>
-                    </div>
-                </div>
-                <h3 style="color: #9F81AE; border-bottom: 3px solid #9F81AE; padding-bottom: 0.5rem; margin-top: 3rem; font-size: 1.8rem;">Grand Centre</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="colistier-card" style="border-top: 5px solid #9F81AE; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/ndossantos.webp" alt="Nathalie Dos Santos" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #9F81AE; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Nathalie Dos Santos</h4>
-                        <p style="font-weight: bold; color: #9F81AE; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">40 ans - Assistante administration des ventes</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Parent d’élèves élue au collège.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #9F81AE; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/ymoussaoui.webp" alt="Younes Moussaoui" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #9F81AE; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Younes Moussaoui</h4>
-                        <p style="font-weight: bold; color: #9F81AE; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">23 ans - Consultant en marketing digital</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Bénévole dans une association de jeunesse cergyssoise.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #9F81AE; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/sdiallo.webp" alt="Sana Diallo" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #9F81AE; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Sana Diallo</h4>
-                        <p style="font-weight: bold; color: #9F81AE; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">37 ans - Déléguée à l’éducation, à la culture et à la formation</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Parent d’élèves élue en école élémentaire. Présidente d’une association humanitaire.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #9F81AE; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/pcamara.webp" alt="Paali Camara" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #9F81AE; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Paali Camara</h4>
-                        <p style="font-weight: bold; color: #9F81AE; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">43 ans - Gérant de société</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Co-fondateur d’une association jeunesse et responsable associatif depuis plus de 20 ans à Cergy. Enseignant bénévole.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #9F81AE; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/sberzig.webp" alt="Sabrina Berzig" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #9F81AE; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Sabrina Berzig</h4>
-                        <p style="font-weight: bold; color: #9F81AE; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">47 ans - Professeure d’anglais</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Parent d’élèves élue en école élémentaire et au collège. Bénévole associative, militante autour de la réussite éducative et de la parentalité.</p>
-                    </div>
-                </div>
-                <h3 style="color: #FFCB05; border-bottom: 3px solid #FFCB05; padding-bottom: 0.5rem; margin-top: 3rem; font-size: 1.8rem;">Axe Majeur</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="colistier-card" style="border-top: 5px solid #FFCB05; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/tdjoumoi.webp" alt="Tchèque Djoumoi" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #FFCB05; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Tchèque Djoumoi</h4>
-                        <p style="font-weight: bold; color: #FFCB05; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">45 ans - Cadre dans la sécurité-incendie</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #FFCB05; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/psambar.webp" alt="Paola Sambar" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #FFCB05; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Paola Sambar</h4>
-                        <p style="font-weight: bold; color: #FFCB05; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">45 ans - Salariée polyvalente responsable ressources humaines</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Artiste et mannequin. Bénévole auprès de seniors dans une structure locale cergyssoise.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #FFCB05; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/dchausson.webp" alt="Daniel Chausson" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #FFCB05; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Daniel Chausson</h4>
-                        <p style="font-weight: bold; color: #FFCB05; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">73 ans - Retraité de l’enseignement professionnel</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #FFCB05; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/cbeguerie.webp" alt="Carine Beguerie" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #FFCB05; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Carine Beguerie</h4>
-                        <p style="font-weight: bold; color: #FFCB05; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">43 ans - Demandeuse d’emploi</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Présidente d'une association de locataires. Militante pour l'habitat digne et contre les dérives abusives des bailleurs.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #FFCB05; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/ydoucoure.webp" alt="Yousouf Doucoure" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #FFCB05; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Yousouf Doucoure</h4>
-                        <p style="font-weight: bold; color: #FFCB05; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">43 ans - Gérant de société</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Responsable associatif depuis plus de 20 ans à Cergy.</p>
-                    </div>
-                </div>
-                <h3 style="color: #F58220; border-bottom: 3px solid #F58220; padding-bottom: 0.5rem; margin-top: 3rem; font-size: 1.8rem;">Coteaux</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="colistier-card" style="border-top: 5px solid #F58220; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/mjudeaux.webp" alt="Muriel Judeaux" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #F58220; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Muriel Judeaux</h4>
-                        <p style="font-weight: bold; color: #F58220; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">58 ans - Médiatrice sociale</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Présidente cofondatrice d’une association locale de soutien scolaire et d’aide à la parentalité. Militante pour la condition animale, bénévole en équithérapie. Ambassadrice Nutrition Santé, ambassadrice de dépistages de cancers auprès de la Ville de Cergy. Membre du Conseil Local de Santé Mentale et du Comité Parentalité.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #F58220; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/mzamorano.webp" alt="Maximo Zamorano" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #F58220; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Maximo Zamorano</h4>
-                        <p style="font-weight: bold; color: #F58220; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">44 ans - Cadre dans la formation sociale</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Co-fondateur d’une association jeunesse et responsable associatif depuis plus de 20 ans à Cergy. Parent d’élèves élu.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #F58220; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/pbarrez.webp" alt="Pascale Barrez" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #F58220; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Pascale Barrez</h4>
-                        <p style="font-weight: bold; color: #F58220; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">66 ans - Retraitée de La Poste</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Militante syndicale.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #F58220; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/snicolic.webp" alt="Steffie Nicolic" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #F58220; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Steffie Nicolic</h4>
-                        <p style="font-weight: bold; color: #F58220; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">36 ans - Employée de banque</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Parent d’élèves élue en école élémentaire. Syndiquée. Élue du personnel au sein de son entreprise.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #F58220; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/aderiviere.webp" alt="Alain Derivière" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #F58220; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Alain Derivière</h4>
-                        <p style="font-weight: bold; color: #F58220; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">73 ans - Retraité de l’enseignement de mathématiques</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Militant syndical.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #F58220; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/sntonga.webp" alt="Sarah Ntonga" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #F58220; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Sarah Ntonga</h4>
-                        <p style="font-weight: bold; color: #F58220; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">36 ans - Responsable comptable</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Parent d’élèves élue en élémentaire.</p>
-                    </div>
-                </div>
-                <h3 style="color: #512DA8; border-bottom: 3px solid #512DA8; padding-bottom: 0.5rem; margin-top: 3rem; font-size: 1.8rem;">Trois-Bois</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="colistier-card" style="border-top: 5px solid #512DA8; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/ibenyacoub.webp" alt="Inès Ben Yacoub" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #512DA8; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Inès Ben Yacoub</h4>
-                        <p style="font-weight: bold; color: #512DA8; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">43 ans - Professeure d’espagnol au lycée</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Syndiquée. Parent d’élèves élue en école élémentaire et au collège. Militante féministe décoloniale et pour les droits LGBTQIA+. Militante antispéciste.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #512DA8; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/mtrabelsi.webp" alt="Malek Trabelsi" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #512DA8; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Malek Trabelsi</h4>
-                        <p style="font-weight: bold; color: #512DA8; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">34 ans - Consultant financier</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #512DA8; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/fzerbouhiisambert.webp" alt="Fabienne Zerbouhi-Isambert" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #512DA8; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Fabienne Zerbouhi-Isambert</h4>
-                        <p style="font-weight: bold; color: #512DA8; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">51 ans - Professeure des écoles</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Adhérente de plusieurs associations culturelles de la ville de Cergy. Adhérente d’une coopérative bio et locale.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #512DA8; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/nsana.webp" alt="Nathan Sana" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #512DA8; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Nathan Sana</h4>
-                        <p style="font-weight: bold; color: #512DA8; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">20 ans - Étudiant en BUT management logistique et transport</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #512DA8; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/kkemtchuaingdupressoir.webp" alt="Kimberley Kemtchuaing-Dupressoir" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #512DA8; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Kimberley Kemtchuaing-Dupressoir</h4>
-                        <p style="font-weight: bold; color: #512DA8; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">31 ans - Informaticienne</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #512DA8; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/ckerkar.webp" alt="Chérif Kerkar" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #512DA8; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Chérif Kerkar</h4>
-                        <p style="font-weight: bold; color: #512DA8; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">53 ans - Ingénieur électronicien</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Militant associatif. Syndiqué.</p>
-                    </div>
-                </div>
-                <h3 style="color: #1A237E; border-bottom: 3px solid #1A237E; padding-bottom: 0.5rem; margin-top: 3rem; font-size: 1.8rem;">Bords D'Oise</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="colistier-card" style="border-top: 5px solid #1A237E; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/sdemaret.webp" alt="Sylvie Demaret" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #1A237E; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Sylvie Demaret</h4>
-                        <p style="font-weight: bold; color: #1A237E; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">62 ans - Fonctionnaire territoriale</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #1A237E; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/ahassani.webp" alt="Abdellah Hassani" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #1A237E; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Abdellah Hassani</h4>
-                        <p style="font-weight: bold; color: #1A237E; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">23 ans - Ingénieur en intelligence artificielle</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Bénévole dans une association de soutien scolaire et pour l’accès à la culture.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #1A237E; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/cgaitan.webp" alt="Chantal Gaitan" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #1A237E; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Chantal Gaitan</h4>
-                        <p style="font-weight: bold; color: #1A237E; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">46 ans - Hôtesse de l’air</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Coordinatrice de la cellule de soutien des traumatismes psychologiques de son entreprise. Parent d'élèves élue au collège. Membre d’associations de lutte contre le SIDA, et contre la faim.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #1A237E; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/dbourde.webp" alt="Déborah Bourde" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #1A237E; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Déborah Bourde</h4>
-                        <p style="font-weight: bold; color: #1A237E; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">40 ans - Infirmière coordinatrice</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Parent d'élèves élue en école élémentaire.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #1A237E; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/jodinot.webp" alt="Jean Louis Odinot" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #1A237E; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Jean Louis Odinot</h4>
-                        <p style="font-weight: bold; color: #1A237E; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">69 ans - Retraité de l’administration des douanes</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #1A237E; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/achetouani.webp" alt="Aïcha Chetouani" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #1A237E; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Aïcha Chetouani</h4>
-                        <p style="font-weight: bold; color: #1A237E; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">43 ans - Cadre dans l’assurance</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Militante pour la cause palestinienne. Parent d’élèves élue en école élémentaire.</p>
-                    </div>
-                </div>
-                <h3 style="color: #A2D149; border-bottom: 3px solid #A2D149; padding-bottom: 0.5rem; margin-top: 3rem; font-size: 1.8rem;">Orée du Bois</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="colistier-card" style="border-top: 5px solid #A2D149; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/rbouhouch.webp" alt="Rachid Bouhouch" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #A2D149; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Rachid Bouhouch</h4>
-                        <p style="font-weight: bold; color: #A2D149; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">56 ans - Policier municipal</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Président d’une association œuvrant auprès des familles autour du bien manger.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #A2D149; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/rbowe.webp" alt="Romain Bowé" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #A2D149; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Romain Bowé</h4>
-                        <p style="font-weight: bold; color: #A2D149; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">22 ans - Étudiant en école d’ingénieur</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Militant écologiste.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #A2D149; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/mseck.webp" alt="Moustapha Seck" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #A2D149; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Moustapha Seck</h4>
-                        <p style="font-weight: bold; color: #A2D149; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">68 ans - Ancien éducateur sportif</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Entraîneur de basket. Militant associatif.</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #A2D149; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/satas.webp" alt="Selin Atas" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #A2D149; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Selin Atas</h4>
-                        <p style="font-weight: bold; color: #A2D149; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">30 ans - Conseillère financière</p>
-                    </div>
-                    <div class="colistier-card" style="border-top: 5px solid #A2D149; background: white; padding: 1.5rem; text-align: center; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center;">
-                        <img src="/images/coli/cfavreau.webp" alt="Claude Favreau" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; border: 3px solid #A2D149; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <h4 style="margin: 0; font-size: 1.25rem; color: #222;">Claude Favreau</h4>
-                        <p style="font-weight: bold; color: #A2D149; margin: 0.5rem 0 0.25rem 0; font-size: 0.95rem;">77 ans - Retraité du secteur commercial</p>
-                        <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #555; line-height: 1.4;">Bénévole caritatif auprès de personnes en situation de migration. Bénévole associatif pour l’apprentissage de la langue française.</p>
-                    </div>
-                </div>
+            <div class="container" id="colistiers-list-container">
             </div>
         </section>
         <!-- FIN LISTE COLISTIERS -->
 
-        <section id="join-us-banner" style="padding-bottom: 4rem;">
+        <section id="join-us-banner" style="padding: 2rem 0 6rem 0; background-color: #fcfcfc;">
             <div class="container">
                 <div class="priority-card"
-                    style="border-top: 5px solid var(--color-red); text-align: center; padding: 3rem; background: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 0 0 10px 10px;">
-                    <h3 style="color: var(--color-red); margin-bottom: 1rem;">Rejoignez-nous !</h3>
-                    <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Et si c'était vous ?</p>
+                    style="border: none; background: linear-gradient(135deg, white, #f9f9f9); text-align: center; padding: 4rem 2rem; box-shadow: 0 15px 35px rgba(0,0,0,0.05); border-radius: 16px; position: relative; overflow: hidden;">
+                    <!-- Decorative background element -->
+                    <div
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: linear-gradient(90deg, var(--color-purple), var(--color-red), var(--color-yellow));">
+                    </div>
+
+                    <h3 style="color: var(--color-purple); margin-bottom: 1rem; font-size: 2.2rem;">L'équipe c'est aussi
+                        vous !</h3>
+                    <p
+                        style="margin-bottom: 2rem; font-size: 1.2rem; color: #555; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Rejoignez la dynamique Cergy en Commun et participez au projet pour notre ville.</p>
                     <a href="/nous-rejoindre.html" class="btn btn-primary"
-                        style="text-decoration: none; color: white; font-weight: bold; font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-block;">Rejoindre
-                        l'équipe</a>
+                        style="text-decoration: none; color: white; font-weight: bold; font-size: 1.1rem; padding: 1rem 2rem; display: inline-block; border-radius: 50px; box-shadow: 0 4px 15px rgba(218, 56, 50, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 20px rgba(218, 56, 50, 0.6)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(218, 56, 50, 0.4)'">Rejoindre
+                        la campagne</a>
                 </div>
             </div>
         </section>

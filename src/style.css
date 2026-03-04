@@ -125,6 +125,15 @@ section {
     border-radius: 2px;
 }
 
+.colistier-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colistier-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
 /* Header */
 #main-header {
     background: white;
