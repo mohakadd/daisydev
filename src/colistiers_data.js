@@ -21,7 +21,7 @@ export const colistiersData = {
             "quartier": "HORLOGE",
             "age": "26 ans",
             "metier": "Autoentrepreneur, athlète de haut niveau",
-            "description": "Membre actif du bureau d’une association sportive cergyssoise. Bénévole au sein d'une association solidaire d'entraide locale pour les personnes dans le besoin."
+            "description": "Membre actif du bureau d’une association sportive cergyssoise. Bénévole au sein d'une association solidaire d'entraide locale pour les personnes dans le besoin. Athlète de haut niveau."
         },
         {
             "id": "asedjai",
@@ -84,7 +84,7 @@ export const colistiersData = {
             "quartier": "HAUTS-DE-CERGY",
             "age": "42 ans",
             "metier": "Graphiste",
-            "description": ""
+            "description": "Militant associatif"
         },
         {
             "id": "sminte",
@@ -102,7 +102,7 @@ export const colistiersData = {
             "quartier": "HAUTS-DE-CERGY",
             "age": "42 ans",
             "metier": "Assistante commerciale",
-            "description": ""
+            "description": "Militant associatif"
         },
         {
             "id": "rgadioux",
@@ -119,7 +119,7 @@ export const colistiersData = {
             "nom prenom": "Hortense Leoué",
             "quartier": "HAUTS-DE-CERGY",
             "age": "49 ans",
-            "metier": "Engagée associative",
+            "metier": "Éducatrice spécialisée",
             "description": "Engagée dans une association locale pour les familles dans le besoin."
         },
         {
@@ -138,7 +138,7 @@ export const colistiersData = {
             "quartier": "BORDS D'OISE",
             "age": "62 ans",
             "metier": "Fonctionnaire territoriale",
-            "description": ""
+            "description": "Militant associatif"
         },
         {
             "id": "ahassani",
@@ -174,7 +174,7 @@ export const colistiersData = {
             "quartier": "BORDS D'OISE",
             "age": "69 ans",
             "metier": "Retraité de l’administration des douanes",
-            "description": ""
+            "description": "Militant associatif"
         },
         {
             "id": "ibenyacoub",
@@ -192,7 +192,7 @@ export const colistiersData = {
             "quartier": "TROIS-BOIS",
             "age": "34 ans",
             "metier": "Consultant financier",
-            "description": ""
+            "description": "Militant associatif"
         },
         {
             "id": "fzerbouhiisambert",
@@ -210,7 +210,7 @@ export const colistiersData = {
             "quartier": "TROIS-BOIS",
             "age": "20 ans",
             "metier": "Étudiant en BUT management logistique et transport",
-            "description": ""
+            "description": "Militant associatif"
         },
         {
             "id": "achetouani",
@@ -228,7 +228,7 @@ export const colistiersData = {
             "quartier": "TROIS-BOIS",
             "age": "31 ans",
             "metier": "Informaticienne",
-            "description": ""
+            "description": "Militant associatif"
         },
         {
             "id": "ckerkar",
@@ -246,7 +246,7 @@ export const colistiersData = {
             "quartier": "AXE MAJEUR",
             "age": "45 ans",
             "metier": "Cadre dans la sécurité-incendie",
-            "description": ""
+            "description": "Militant associatif"
         },
         {
             "id": "psambar",
@@ -263,8 +263,8 @@ export const colistiersData = {
             "nom prenom": "Daniel Chausson",
             "quartier": "AXE MAJEUR",
             "age": "73 ans",
-            "metier": "Retraité de l’enseignement professionnel",
-            "description": ""
+            "metier": "Militant syndical",
+            "description": "Militant associatif"
         },
         {
             "id": "cbeguerie",
@@ -345,7 +345,7 @@ export const colistiersData = {
             "quartier": "GRAND CENTRE",
             "age": "40 ans",
             "metier": "Assistante administration des ventes",
-            "description": "Parent d’élèves élue au collège."
+            "description": "Parent d’élèves syndiquée, élue au collège."
         },
         {
             "id": "ymoussaoui",
@@ -417,7 +417,7 @@ export const colistiersData = {
             "quartier": "ORÉE DU BOIS",
             "age": "30 ans",
             "metier": "Conseillère financière",
-            "description": ""
+            "description": "Bénévole associative d’une association culturelle."
         },
         {
             "id": "cfavreau",
