@@ -84,7 +84,7 @@ export const colistiersData = {
             "quartier": "HAUTS-DE-CERGY",
             "age": "42 ans",
             "metier": "Graphiste",
-            "description": "Militante associative"
+            "description": "Militante associative."
         },
         {
             "id": "sminte",
@@ -102,7 +102,7 @@ export const colistiersData = {
             "quartier": "HAUTS-DE-CERGY",
             "age": "42 ans",
             "metier": "Assistante commerciale",
-            "description": "Militante associative"
+            "description": "Militante associative."
         },
         {
             "id": "rgadioux",
@@ -138,7 +138,7 @@ export const colistiersData = {
             "quartier": "BORDS D'OISE",
             "age": "62 ans",
             "metier": "Fonctionnaire territoriale",
-            "description": "Militante associative"
+            "description": "Militante associative."
         },
         {
             "id": "ahassani",
@@ -174,7 +174,7 @@ export const colistiersData = {
             "quartier": "BORDS D'OISE",
             "age": "69 ans",
             "metier": "Retraité de l’administration des douanes",
-            "description": "Militant associatif"
+            "description": "Militant associatif."
         },
         {
             "id": "ibenyacoub",
@@ -192,7 +192,7 @@ export const colistiersData = {
             "quartier": "TROIS-BOIS",
             "age": "34 ans",
             "metier": "Consultant financier",
-            "description": "Militant associatif"
+            "description": "Militant associatif."
         },
         {
             "id": "fzerbouhiisambert",
@@ -210,7 +210,7 @@ export const colistiersData = {
             "quartier": "TROIS-BOIS",
             "age": "20 ans",
             "metier": "Étudiant en BUT management logistique et transport",
-            "description": "Militant associatif"
+            "description": "Militant associatif."
         },
         {
             "id": "achetouani",
@@ -228,7 +228,7 @@ export const colistiersData = {
             "quartier": "TROIS-BOIS",
             "age": "31 ans",
             "metier": "Informaticienne",
-            "description": "Militante associative"
+            "description": "Militante associative."
         },
         {
             "id": "ckerkar",
@@ -246,7 +246,7 @@ export const colistiersData = {
             "quartier": "AXE MAJEUR",
             "age": "45 ans",
             "metier": "Cadre dans la sécurité-incendie",
-            "description": "Militant associatif"
+            "description": "Militant associatif."
         },
         {
             "id": "psambar",
@@ -264,7 +264,7 @@ export const colistiersData = {
             "quartier": "AXE MAJEUR",
             "age": "73 ans",
             "metier": "Militant syndical",
-            "description": "Militant associatif"
+            "description": "Militant associatif."
         },
         {
             "id": "cbeguerie",
