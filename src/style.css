@@ -134,6 +134,76 @@ section {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* Colistiers Grid & Mobile Carousel */
+.mobile-scroll-hint {
+    display: none;
+}
+
+.colistiers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+    .mobile-scroll-hint {
+        display: block !important;
+        font-size: 0.85rem;
+        font-weight: 600;
+        animation: pulseSlide 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseSlide {
+
+        0%,
+        100% {
+            opacity: 0.4;
+            transform: translateX(0);
+        }
+
+        50% {
+            opacity: 1;
+            transform: translateX(5px);
+        }
+    }
+
+    .colistiers-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+        /* space for the scrollbar/shadows */
+        margin-left: -1rem;
+        /* Negative margin to let it bleed edge-to-edge on mobile */
+        margin-right: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        /* Hide scrollbar for cleaner look (optional, but requested often) */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE/Edge */
+    }
+
+    .colistiers-grid::-webkit-scrollbar {
+        display: none;
+        /* Chrome/Safari */
+    }
+
+    .colistiers-grid>.colistier-card {
+        flex: 0 0 85%;
+        /* Cards take up 85% of screen width */
+        scroll-snap-align: center;
+        max-width: 350px;
+        /* Cap so it doesn't get weird on tablets */
+    }
+}
+
 /* Header */
 #main-header {
     background: white;
