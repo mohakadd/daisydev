@@ -213,5 +213,33 @@ export const programmeData = [
             <p>Mutualiser et créer un Centre de Supervision Urbain (vidéosurveillance) Intercommunal.</p>
             <p>Auditer les délégations de services publics et les partenariats publics-privés afin de déterminer un <strong>plan de retour en régie publique</strong>.</p>
         `
+    },
+    {
+        id: "chartes",
+        title: "Nos Engagements",
+        icon: "/images/chartes.webp",
+        color: "#005CE6",
+        content: `
+            <p style="font-size: 1.15rem; margin-bottom: 2rem; color: #555;">Retrouvez ici les chartes signées et sur lesquelles s’engagent Cergy en commun.</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <a href="/chartes/Charte LPO Municipales 2026.pdf" target="_blank" rel="noopener noreferrer" class="charte-btn" style="display: flex; align-items: center; gap: 1rem; background: #f8f9fa; border: 1px solid #ddd; padding: 1rem; border-radius: 8px; color: #333; font-weight: bold; text-decoration: none; transition: all 0.2s;">
+                    <i class="fa-solid fa-file-pdf" style="color: var(--color-red); font-size: 1.5rem;"></i>
+                    <span>Charte LPO</span>
+                </a>
+                <a href="/chartes/Charte Paz Municipales 2026.pdf" target="_blank" rel="noopener noreferrer" class="charte-btn" style="display: flex; align-items: center; gap: 1rem; background: #f8f9fa; border: 1px solid #ddd; padding: 1rem; border-radius: 8px; color: #333; font-weight: bold; text-decoration: none; transition: all 0.2s;">
+                    <i class="fa-solid fa-file-pdf" style="color: var(--color-red); font-size: 1.5rem;"></i>
+                    <span>Charte PAZ</span>
+                </a>
+                <a href="/chartes/LLDA_Charte_Municipales_2026.pdf" target="_blank" rel="noopener noreferrer" class="charte-btn" style="display: flex; align-items: center; gap: 1rem; background: #f8f9fa; border: 1px solid #ddd; padding: 1rem; border-radius: 8px; color: #333; font-weight: bold; text-decoration: none; transition: all 0.2s;">
+                    <i class="fa-solid fa-file-pdf" style="color: var(--color-red); font-size: 1.5rem;"></i>
+                    <span>Charte L214 / LLDA</span>
+                </a>
+                <a href="/chartes/Pacte_Signature_Meres_Deters.pdf" target="_blank" rel="noopener noreferrer" class="charte-btn" style="display: flex; align-items: center; gap: 1rem; background: #f8f9fa; border: 1px solid #ddd; padding: 1rem; border-radius: 8px; color: #333; font-weight: bold; text-decoration: none; transition: all 0.2s;">
+                    <i class="fa-solid fa-file-pdf" style="color: var(--color-red); font-size: 1.5rem;"></i>
+                    <span>Pacte Mères Déters</span>
+                </a>
+            </div>
+        `
     }
 ];

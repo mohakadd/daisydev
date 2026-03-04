@@ -134,6 +134,26 @@ section {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* Chartes Section */
+.charte-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08) !important;
+    border-color: var(--color-red) !important;
+    color: var(--color-purple) !important;
+}
+
+@media (min-width: 768px) {
+    .chartes-card-inner {
+        flex-direction: row !important;
+        text-align: left !important;
+    }
+
+    .chartes-card-inner>div>p {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
 /* Colistiers Grid & Mobile Carousel */
 .mobile-scroll-hint {
     display: none;
