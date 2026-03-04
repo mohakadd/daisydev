@@ -30,7 +30,7 @@ export const colistiersData = {
             "quartier": "HORLOGE",
             "age": "40 ans",
             "metier": "Assistante maternelle",
-            "description": "Membre d’une association locale d’éveil et parentalité."
+            "description": "Membre d’une association locale d’éveil et de parentalité."
         },
         {
             "id": "ddelvig",
